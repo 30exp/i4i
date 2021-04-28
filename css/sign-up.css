@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  padding: 2rem;
+  color: #212121;
+  background-color: #c9e9ea;
+  overflow: hidden;
+  transition: all .2s;
+}
+
+form {
+  border: .125rem solid #212121;
+  padding: 2rem;
+  border-radius: .25rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: repeat(2,auto);
+  grid-column-gap: .25rem;
+  label {
+    display: block;
+    margin-bottom: 1rem;
+    color: #212121;
+    grid-column: 1/-1;
+    grid-row: 1;
+    letter-spacing: .5px;
+  }
+  button {
+    grid-column: 2;
+    grid-row: 2;
+    border: 0;
+    background: #212121;
+    color: #fff;
+    padding: 1rem 1rem .75rem;
+    border-radius: .25rem;
+    font-size: 1.15rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: .25rem;
+    font-family: alternate-gothic-no-3-d, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  input {
+    grid-column: 1;
+    grid-row: 2;
+    border: 0;
+    background-color: #fff;
+    padding: 1rem 1rem .75rem;
+    border-radius: .25rem;
+    color: #212121;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.125rem;
+    overflow: hidden;
+    &:focus {
+      background-color: #212121;
+      color: #fff;
+      outline: none;
+    }
+  }
+}
+
+.hi-welcome {
+  h1 {
+    margin: 0;
+    font-family: alternate-gothic-no-3-d, sans-serif;
+    font-size: 5rem;
+    color: #031412;
+    line-height: 1;
+  }
+}
+
+.reset {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  border-radius: .25rem;
+  text-align: center;
+  text-transform: uppercase;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-family: proxima-nova, sans-serif;
+  font-size: 1rem;
+  color: #212121;
+  &[disabled]{
+    opacity: .2;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.dark {
+  background-color: #212121;
+  form {
+    border: 1px solid #fff;
+    label {
+      color: #fff;
+    }
+    button {
+      border: 1px solid #fff;
+    }
+    input {
+      background-color: #fff;
+      color: #212121;
+    }
+  }
+}

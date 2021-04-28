@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box; }
+
+.body-login {
+  height: 100vh;
+  background-color: #031412;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 0;
+  place-items: center; }
+
+.welcome {
+  grid-column: 1;
+  grid-row: 1;
+  padding: 0;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto; }
+
+.customer-login {
+  padding: 4rem 0;
+  margin: 0;
+  grid-column: 1;
+  grid-row: 2;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-radius: .5rem;
+  place-items: center; }
+  .customer-login .new-c {
+    grid-column: 1; }
+  .customer-login .return-c {
+    grid-column: 2; }
+  .customer-login a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #00a79d; }
+
+.skip-login {
+  grid-column: 1;
+  grid-row: 3;
+  color: #c9e9ea;
+  font-size: 12px;
+  padding: 0;
+  margin: 0; }
+
+/*# sourceMappingURL=login.css.map */

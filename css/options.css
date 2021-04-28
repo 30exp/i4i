@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  place-items: center;
+  height: 100vh;
+  padding: 2rem;
+  background-color: #031412;
+    text-align: center;
+    color: #c9e9ea;
+
+}
+
+.home-logo {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: center;
+}
+
+.options {
+  padding: 4rem 0 0 0;
+  grid-column: 1;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 1rem;
+}
+
+.add-to-cart h3 {
+text-align: center;
+}
+
+
+h2 {
+  padding: 4rem 0 0 0;
+  margin: 0;
+  color: #c9e9ea;
+  font-size: 2rem
+}
+
+a h3 {
+  padding: 4rem 0;
+}
+
+button {
+  width: 40rem;
+  height: 10rem;
+}
+
+.checkout button {
+  width: 40rem;
+  height: 10rem;
+}
+
+.choose button {
+  width: 40rem;
+  height: 2rem;
+}
+
+footer .checkuout button {
+  height: 12px;
+}
+
+.choose {
+  width: 100%;
+  grid-column: 1/ span 2;
+  grid-row: 2;
+}
+
+.choose .h3 {
+  padding: 0;
+}
+.container {
+  margin-bottom: 1rem;
+  padding: 2rem;
+  border: 1px solid #2b4f60;
+  border-radius: .25rem;
+  display: grid;
+  grid-template-columns: 10rem 3rem 3rem 1fr 7rem;
+  grid-gap: 1rem;
+  align-items: center;
+}
+
+.container .display {
+  justify-self: center;
+}
+
+.container .display span {
+  color: #86acaa;
+}
+
+.container button {
+  border: 1px solid #2b4f60;
+  border-radius: .25rem;
+  color: #2b4f60;
+  background-color: transparent;
+  font-family: 'Inter', sans-serif;
+  padding-bottom: .25rem;
+  width: 2rem;
+}
+
+.container button[disabled]{
+  border-color: #86acaa;
+  color: #86acaa;
+}
+
+.container .sub {
+  justify-self: end;
+}
+
+.container .sub::before { content: '$'; }
+.container .sub::after { content: '.00';}
+
+footer {
+  width: 100%;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.total {
+  font-weight: 700;
+  justify-self: end;
+}
+
+.total p {
+  margin: 0;
+  padding: 2rem 0 0 0;
+}
+
+.total p::before { content: '$'; }
+.total p::after { content: '.00'; }
+
+.checkout a {
+  font-size: 1rem;
+  border-radius: .25rem;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checkout a.disabled {
+  opacity: .2;
+}
+
+.back {
+  padding: 0;
+}
+
+/*.plus {
+  height: 0;
+  width: 0;
+}*/
